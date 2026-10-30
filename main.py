@@ -17,7 +17,7 @@ cursor=conn.cursor()
 
 class item(BaseModel):
     name:str
-    des:int
+    des:str
 
 @app.post("/items/create")
 def create_item(i:item):
